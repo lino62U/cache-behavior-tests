@@ -21,7 +21,6 @@ Makefile
 *.swo
 *.swn
 
-
 # Ignorar archivos de caché y de dependencias
 *.d
 *.o
@@ -38,9 +37,8 @@ Makefile
 *.core
 *.stackdump
 
-
-
 # Archivos de configuración de IDEs
 .idea/
-*.iml
 
+# Ignorar el entorno virtual
+venv/
