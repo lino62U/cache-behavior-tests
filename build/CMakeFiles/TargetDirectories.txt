@@ -1,3 +1,4 @@
 /home/alupoc/Documentos/paralela/informes/cache-behavior-tests/build/CMakeFiles/matrix_mult.dir
+/home/alupoc/Documentos/paralela/informes/cache-behavior-tests/build/CMakeFiles/main_row_column.dir
 /home/alupoc/Documentos/paralela/informes/cache-behavior-tests/build/CMakeFiles/edit_cache.dir
 /home/alupoc/Documentos/paralela/informes/cache-behavior-tests/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,46 @@
+# Ignorar archivos y carpetas de VSCode
+.vscode/
+
+# Ignorar directorios de compilación
+build/
+dist/
+out/
+bin/
+obj/
+
+# Archivos de CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Archivos temporales del sistema
+*.log
+*.tmp
+*.swp
+*.swo
+*.swn
+
+
+# Ignorar archivos de caché y de dependencias
+*.d
+*.o
+*.a
+*.so
+*.dll
+*.exe
+
+# Archivos de editor (por ejemplo, Emacs, vim, etc.)
+*~
+*.bak
+
+# Archivos de depuración
+*.core
+*.stackdump
+
+
+
+# Archivos de configuración de IDEs
+.idea/
+*.iml
+

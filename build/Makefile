@@ -129,6 +129,19 @@ matrix_mult/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_mult.dir/build.make CMakeFiles/matrix_mult.dir/build
 .PHONY : matrix_mult/fast
 
+#=============================================================================
+# Target rules for targets named main_row_column
+
+# Build rule for target.
+main_row_column: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_row_column
+.PHONY : main_row_column
+
+# fast build rule for target.
+main_row_column/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_row_column.dir/build.make CMakeFiles/main_row_column.dir/build
+.PHONY : main_row_column/fast
+
 sources/main.o: sources/main.cpp.o
 .PHONY : sources/main.o
 
@@ -153,12 +166,37 @@ sources/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_mult.dir/build.make CMakeFiles/matrix_mult.dir/sources/main.cpp.s
 .PHONY : sources/main.cpp.s
 
+sources/main_row_column.o: sources/main_row_column.cpp.o
+.PHONY : sources/main_row_column.o
+
+# target to build an object file
+sources/main_row_column.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_row_column.dir/build.make CMakeFiles/main_row_column.dir/sources/main_row_column.cpp.o
+.PHONY : sources/main_row_column.cpp.o
+
+sources/main_row_column.i: sources/main_row_column.cpp.i
+.PHONY : sources/main_row_column.i
+
+# target to preprocess a source file
+sources/main_row_column.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_row_column.dir/build.make CMakeFiles/main_row_column.dir/sources/main_row_column.cpp.i
+.PHONY : sources/main_row_column.cpp.i
+
+sources/main_row_column.s: sources/main_row_column.cpp.s
+.PHONY : sources/main_row_column.s
+
+# target to generate assembly for a file
+sources/main_row_column.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_row_column.dir/build.make CMakeFiles/main_row_column.dir/sources/main_row_column.cpp.s
+.PHONY : sources/main_row_column.cpp.s
+
 sources/matrix_utils.o: sources/matrix_utils.cpp.o
 .PHONY : sources/matrix_utils.o
 
 # target to build an object file
 sources/matrix_utils.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_mult.dir/build.make CMakeFiles/matrix_mult.dir/sources/matrix_utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_row_column.dir/build.make CMakeFiles/main_row_column.dir/sources/matrix_utils.cpp.o
 .PHONY : sources/matrix_utils.cpp.o
 
 sources/matrix_utils.i: sources/matrix_utils.cpp.i
@@ -167,6 +205,7 @@ sources/matrix_utils.i: sources/matrix_utils.cpp.i
 # target to preprocess a source file
 sources/matrix_utils.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_mult.dir/build.make CMakeFiles/matrix_mult.dir/sources/matrix_utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_row_column.dir/build.make CMakeFiles/main_row_column.dir/sources/matrix_utils.cpp.i
 .PHONY : sources/matrix_utils.cpp.i
 
 sources/matrix_utils.s: sources/matrix_utils.cpp.s
@@ -175,7 +214,35 @@ sources/matrix_utils.s: sources/matrix_utils.cpp.s
 # target to generate assembly for a file
 sources/matrix_utils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_mult.dir/build.make CMakeFiles/matrix_mult.dir/sources/matrix_utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_row_column.dir/build.make CMakeFiles/main_row_column.dir/sources/matrix_utils.cpp.s
 .PHONY : sources/matrix_utils.cpp.s
+
+sources/row_column.o: sources/row_column.cpp.o
+.PHONY : sources/row_column.o
+
+# target to build an object file
+sources/row_column.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_mult.dir/build.make CMakeFiles/matrix_mult.dir/sources/row_column.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_row_column.dir/build.make CMakeFiles/main_row_column.dir/sources/row_column.cpp.o
+.PHONY : sources/row_column.cpp.o
+
+sources/row_column.i: sources/row_column.cpp.i
+.PHONY : sources/row_column.i
+
+# target to preprocess a source file
+sources/row_column.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_mult.dir/build.make CMakeFiles/matrix_mult.dir/sources/row_column.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_row_column.dir/build.make CMakeFiles/main_row_column.dir/sources/row_column.cpp.i
+.PHONY : sources/row_column.cpp.i
+
+sources/row_column.s: sources/row_column.cpp.s
+.PHONY : sources/row_column.s
+
+# target to generate assembly for a file
+sources/row_column.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_mult.dir/build.make CMakeFiles/matrix_mult.dir/sources/row_column.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_row_column.dir/build.make CMakeFiles/main_row_column.dir/sources/row_column.cpp.s
+.PHONY : sources/row_column.cpp.s
 
 # Help Target
 help:
@@ -185,13 +252,20 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... main_row_column"
 	@echo "... matrix_mult"
 	@echo "... sources/main.o"
 	@echo "... sources/main.i"
 	@echo "... sources/main.s"
+	@echo "... sources/main_row_column.o"
+	@echo "... sources/main_row_column.i"
+	@echo "... sources/main_row_column.s"
 	@echo "... sources/matrix_utils.o"
 	@echo "... sources/matrix_utils.i"
 	@echo "... sources/matrix_utils.s"
+	@echo "... sources/row_column.o"
+	@echo "... sources/row_column.i"
+	@echo "... sources/row_column.s"
 .PHONY : help
 
 
