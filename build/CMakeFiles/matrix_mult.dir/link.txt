@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/matrix_mult.dir/sources/main.cpp.o CMakeFiles/matrix_mult.dir/sources/matrix_utils.cpp.o -o matrix_mult 

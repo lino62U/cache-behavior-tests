@@ -1,0 +1,7 @@
+Probando tamaño de matriz: 500x500
+
+real	0m0,918s
+user	0m0,914s
+sys	0m0,004s
+-----------------------------------
+Probando tamaño de matriz: 1000x1000
